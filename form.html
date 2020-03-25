@@ -13,16 +13,16 @@
 		<h2>Curriculum Vitae</h2><br>
 		<h2><span>Register</span></h2>
 	</div>
-	<form class="formreg" action="">
+	<form class="formreg" action="recibir_formulario.php" method="post" name="form" >
 		<!-- First name -->
 		<h2 align="center">First name</h2>
 		<div>
-		<input class="input" type="text" name="first_name" placeholder="Enter your first name"  autofocus="autofocus" title="Enter your first name" size="50" required="required">
+		<input class="input" type="text" name="first_name" placeholder="Enter your first name"  autofocus="autofocus" title="Enter your first name" size="50" required="required" id="first_name">
 		</div>
 		<!-- Last name -->
 		<h2 align="center">Last name</h2>
 		<div>
-		<input class="input" type="text" name="last_name" placeholder="Enter your last name"  autofocus="autofocus" title="Enter your last name" size="50" required="required">
+		<input class="input" type="text" name="last_name" placeholder="Enter your last name"  autofocus="autofocus" title="Enter your last name" size="50" required="required" id="last_name">
 		</div>
 		<!-- Date of birth / gender -->
 		<div align="center">
@@ -44,7 +44,7 @@
 				<option value="G" title="Gubernamenl">G</option>
 				</select>
 			<input class="input" type="number" name="dni" id="dni" placeholder="Enter your DNI" title="Enter your DNI"
-			 size="50" required="required">
+			 size="50" required="required" id="dni">
 		</div>
 		<!-- Phone number -->
 		<h2 align="center">Phone number</h2>
