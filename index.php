@@ -9,7 +9,7 @@
 
 <ul>
 	<li> <a href="form.html"> Formulario </li>
-	<li> <a href="#"> Modulo 2 </li>
+	<li> <a href="./personas/PersonasControlador.php?operacion=index"> Modulo 2 </li>
 	<li> <a href="#"> Modulo 3 </li>
 </ul>
 
