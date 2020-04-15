@@ -1,245 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<script type="text/javascript" src="jquery-1.12.4.min.js"></script>
-	<title>Curriculum vitae</title>
+	<title></title>
 </head>
 <body>
-	<div class="container">
-	<div class="formtop">
-		<h2>Curriculum Vitae</h2><br>
-		<h2><span>Register</span></h2>
-	</div>
-	<form class="formreg" action="recibir_formulario.php" method="post" name="form" >
-		<!-- First name -->
-		<h2 align="center">First name</h2>
-		<div>
-		<input class="input" type="text" name="first_name" placeholder="Enter your first name"  autofocus="autofocus" title="Enter your first name" size="50" required="required" id="first_name">
-		</div>
-		<!-- Last name -->
-		<h2 align="center">Last name</h2>
-		<div>
-		<input class="input" type="text" name="last_name" placeholder="Enter your last name"  autofocus="autofocus" title="Enter your last name" size="50" required="required" id="last_name">
-		</div>
-		<!-- Date of birth / gender -->
-		<div align="center">
-			<h2>Date of birth and gender</h2>
-			<input class="input" type="Date" name="date_gender" required="required">
-			<select class="input" name="gender" id="gender" title="Select your gender">
-			<option class="input" value="Male" title="Masculino">Male</option>option>
-			<option class="input" value="Female" title="Femenino">Female</option>option>
-			<option class="input" value="Other" title="Femenino">Other</option>option>
-			</select>
-		</div>
-		<!-- DNI -->
-		<h2 align="center">DNI</h2>
-		<div align="center">
-		<select class="input" name="nationality" id="nationality" title="Select your nationality" required="required">
-				<option value="V" title="Venezolano/a">V</option>
-				<option value="E" title="Extranjero/a">E</option>
-				<option value="J" title="Juridico/a">J</option>
-				<option value="G" title="Gubernamenl">G</option>
-				</select>
-			<input class="input" type="number" name="dni" id="dni" placeholder="Enter your DNI" title="Enter your DNI"
-			 size="50" required="required" id="dni">
-		</div>
-		<!-- Phone number -->
-		<h2 align="center">Phone number</h2>
-		<div align="center">
-			<select class="input" name="cod" id="cod" title="Select your code" required="required">
-				<option value="0412" title="cod">0412</option>
-				<option value="0416" title="cod">0416</option>
-				<option value="0426" title="cod">0426</option>
-				<option value="0414" title="cod">0414</option>
-				<option value="0424" title="cod">0424</option>
-				</select>
-			<input class="input" type="number" name="phone_number" id="phone_number" placeholder="Enter your phone number" title="Enter your phone
-		number"  size="50" required="required">
-		</div>
-		<!-- E-mail -->
-		<h2 align="center">E-mail</h2>
-		<div align="center">
-			<input class="input" type="email" name="email_adress" id="email_adress" placeholder="Enter your email adresss" title="Enter your
-		email adress"  size="50" required="required">
-		</div>
-		<!-- Marital status -->
-		<div>
-			<h2 align="center">Marital status</h2>
-			<input type="radio" name="marital_status" id="Single" title="Select your marital status" value="Single" checked=
-		"checked"
-			<option value="S"></option>Single
-		<input type="radio" name="marital_status" id="Married" title="Select your marital status" value="Married"
-			<option value="M"></option>Married
-		<input type="radio" name="marital_status" id="Widowed" title="Select your marital status" value="Widowed"
-			<option value="W"></option>Widowed
-		<input type="radio" name="marital_status" id="Divorced" title="Select your marital status" value="Divorced"
-			<option value="D"></option>Divorced
-		</div>
-		<!-- Direction -->
-		<div align="center">
-			<h2 align="center">Direction</h2>
-			<textarea class="input" type="text" name="direction" cols="50" rows="5" title="Enter your direction here" id="direction" placeholder="Enter your direction here" required="required"></textarea>
-		</div>
-		<!-- Applied studies -->
-		<div align="center" id="f1">
-			<h2 align="center">Applied studies</h2>
-			<input class="input" type="text" name="applied_studies" id="applied_studies" placeholder="Enter your applied studies here" title="Enter your applied studies here"  size="40" required="required">
-			<br>
-			<input type="button" name="add1" value="Add" id="add1" class="agg">
-		</div>
-		<table>
-			<tr>
-				<td colspan="2">
-					<table id="hola">		
-					</table>
-				</td>
-			</tr>
-		</table>
-		<!-- Skills -->
-		<h2 align="center">Skills</h2>
-		<div align="center">
-			<b>English</b> 
-		<select class="input" name="skilss" id="skills" title="skills" required="required"b>
-				<option value="10%" title="Skills">10%</option>
-				<option value="20%" title="Skills">20%</option>
-				<option value="30%" title="Skills">30%</option>
-				<option value="40%" title="Skills">40%</option>
-				<option value="50%" title="Skills">50%</option>
-				<option value="60%" title="Skills">60%</option>
-				<option value="70%" title="Skills">70%</option>
-				<option value="80%" title="Skills">80%</option>
-				<option value="90%" title="Skills">90%</option>
-				<option value="100%" title="Skills">100%</option>
-				</select>
-			<br>
-			<b>French</b>
-		<select class="input" name="skilss" id="skills" title="skills" required="required">
-				<option value="10%" title="Skills">10%</option>
-				<option value="20%" title="Skills">20%</option>
-				<option value="30%" title="Skills">30%</option>
-				<option value="40%" title="Skills">40%</option>
-				<option value="40%" title="Skills">50%</option>
-				<option value="60%" title="Skills">60%</option>
-				<option value="70%" title="Skills">70%</option>
-				<option value="80%" title="Skills">80%</option>
-				<option value="90%" title="Skills">90%</option>
-				<option value="100%" title="Skills">100%</option>
-				</select>
-				<br>
-				<b>HTML</b>
-		<select class="input" name="skilss" id="skills" title="skills" required="required">
-				<option value="10%" title="Skills">10%</option>
-				<option value="20%" title="Skills">20%</option>
-				<option value="30%" title="Skills">30%</option>
-				<option value="40%" title="Skills">40%</option>
-				<option value="40%" title="Skills">50%</option>
-				<option value="60%" title="Skills">60%</option>
-				<option value="70%" title="Skills">70%</option>
-				<option value="80%" title="Skills">80%</option>
-				<option value="90%" title="Skills">90%</option>
-				<option value="100%" title="Skills">100%</option>
-				</select>
-				<br>
-				<b>CSS</b>
-		<select class="input" name="skilss" id="skills" title="skills" required="required">
-				<option value="10%" title="Skills">10%</option>
-				<option value="20%" title="Skills">20%</option>
-				<option value="30%" title="Skills">30%</option>
-				<option value="40%" title="Skills">40%</option>
-				<option value="40%" title="Skills">50%</option>
-				<option value="60%" title="Skills">60%</option>
-				<option value="70%" title="Skills">70%</option>
-				<option value="80%" title="Skills">80%</option>
-				<option value="90%" title="Skills">90%</option>
-				<option value="100%" title="Skills">100%</option>
-				</select>
+	<a href="PersonasControlador.php?operacion=index"> Listar personas </a>
+	<a href="../index.php"> Inicio </a>
+	<form action="PersonasControlador.php" method="post" name="form">
 
-		</div>
-		<!-- Work experience -->
-		<div align="center">
-			<h2 align="center">Work experience</h2>
-			<input class="input" type="text" name="Work experience" title="Enter your work experience here" id="work experience" placeholder="Business" size="20" required="required">
-			<input class="input" type="number" name="how long" id="how long" placeholder="Years working" title="How long" size="50" required="required">
-			<input type="button" name="add3" value="Add" id="add3" class="agg">
-		</div>
-		<table>
-			<tr>
-				<td colspan="2">
-					<table id="hola3">		
-					</table>
-				</td>
-			</tr>
-		</table>
-		<!-- Personal references -->
-		<div align="center">
-			<h2 align="center">Personal references</h2><br><small> <b>(E-mail, please)</b></small>
-			<input class="input" type="email" name="personal_references" id="personal_references" placeholder="Enter some personal reference (example@gmail.com)" title="Enter some personal reference here (E-mail)"  size="50" required="required">
-			<input type="button" name="add2" value="Add" id="add2" class="agg">
-		</div>
-		<table>
-			<tr>
-				<td colspan="2">
-					<table id="hola2">		
-					</table>
-				</td>
-			</tr>
-		</table>
-		<!-- Button -->
-		<div class="btn_form">
-			<input class="btn_submit" type="submit" name="button" value="Submit">
-			<input class="btn_reset" type="reset" name="reset" value="Clean">
-		</div>
-		</div>
+	<table>
+		<tr>
+			<td colspan="2"> Registro de personas </td>
+		</tr>
+
+		<tr>
+			<td> Nombres: </td> 
+			<td>
+				<input type="text" name="first_name" id="first_name" placeholder="Ej Jose Martin" title="Ingrese sus nombres">
+			</td>
+		</tr>
+		<tr>
+			<td> Apellidos: </td> 
+			<td>
+				<input type="text" name="last_name" id="last_name" placeholder="Ej Salceo" title="Ingrese sus apellidos">
+			</td>
+		</tr>
+		<tr>
+			<td> Cedula: </td> 
+			<td>
+				<input type="nombre" name="dni" id="dni" placeholder="Ej 12345678" title="Ingrese su cedula">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="hidden" name="operacion" value="guardar">
+				<input type="submit" name="enviar" value="enviar">
+			</td>
+		</tr>
+	</table>
 	</form>
 </body>
 </html>
-<!-- JavaScript -->
-
-<script type="text/javascript">
-	var i=1;
-	$("#add1").on('click',function(event){
-		$("#hola").append('<div align="center" id="f1'+i+'"><h2 align="center"></h2><input class="input" type="text" name="applied_studies" id="applied_studies" placeholder="Enter your applied studies here" title="Enter your applied studies here"  size="40" align="center"><input type="button" name="remove1" value="Remove" onclick="eliminar('+i+')" class="delete"></div>');
-		i++;
-	});
-	function eliminar(i){
-		var nombre_f1="#f1";
-		var num="";
-		var num_f1=i;
-		num=num_f1.toString();
-		var f1=nombre_f1.concat(num);
-		$("" +f1+ "").empty();
-	};
-
-	var i=1;
-	$("#add2").on('click',function(event){
-		$("#hola2").append('<div align="center" id="f1'+i+'"><h2 align="center"></h2><br><small><b>(E-mail, please)<b></small><input class="input" type="email" name="personal_references" id="personal_references" placeholder="Enter some personal reference (example@gmail.com)" title="Enter some personal reference here (E-mail)"  size="50"><input type="button" name="remove2" value="Remove" onclick="eliminar('+i+')" class="delete"></div>');
-		i++;
-	});
-		function eliminar(i){
-		var nombre_f1="#f1";
-		var num="";
-		var num_f1=i;
-		num=num_f1.toString();
-		var f1=nombre_f1.concat(num);
-		$("" +f1+ "").empty();
-	};
-
-	var i=1;
-	$("#add3").on('click',function(event){
-		$("#hola3").append('<div align="center" id="f1'+i+'"><h2 align="center"></h2><input class="input" type="text" name="Work experience" title="Enter your work experience here" id="work experience" placeholder="Business" size="20"> <input class="input" type="number" name="how long" id="how long" placeholder="Years working" title="How long" size="50"><input type="button" name="remove3" value="Remove" class="delete" onclick="eliminar ('+i+')" class="delete"> </div>');
-		i++;
-	});
-		function eliminar(i){
-		var nombre_f1="#f1";
-		var num="";
-		var num_f1=i;
-		num=num_f1.toString();
-		var f1=nombre_f1.concat(num);
-		$("" +f1+ "").empty();
-	};
-	
-</script>
-

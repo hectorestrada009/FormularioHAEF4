@@ -8,7 +8,7 @@ $data=unserialize($data);
 <script type="text/javascript">
 	function eliminar(id) {
 		if (confirm("Seguro desea eliminar el registro?")) {
-			window.location="/PersonasControlador.php?operacion=eliminar&id_persona="+id;
+			window.location="PersonasControlador.php?operacion=eliminar&id_persona="+id;
 		}
 	}
 </script>
@@ -26,7 +26,8 @@ $data=unserialize($data);
 	<?php for ($j=1;$j <$campos; $j++) { ?>
 		<td><?=$data[$i][$j]?></td>
 <?php } ?>
-<td><a href="PersonasControlador.php?operacion=modificar&id_persona=<?=$data[$i][0]?>">Modificar</a><a href="javascript:eliminar(<?=$data[$i][0]?>)">Eliminar</a>
+<td><a href="PersonasControlador.php?operacion=modificar&id_persona=<?=$data[$i][0]?>">Modificar</a>
+	<a href="javascript:eliminar(<?=$data[$i][0]?>)">Eliminar</a>
 </td>
 <?php
 	$num++;
