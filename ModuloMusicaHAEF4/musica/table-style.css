@@ -1,0 +1,34 @@
+#tabla{
+	width: 900px;
+	padding: 30px;
+	margin: auto;
+	margin-top: 100px;
+	box-shadow: 7px 13px 37px #000;
+	border-collapse: collapse;
+	background-color: #85C1E9;
+	text-align: center;
+	font-family: arial;
+	font-size: 120%;
+	border-color: #1B4F72;
+}
+
+#fondo{
+	background-image: url(fondo.jpg);
+	background-size: 95%
+}
+
+.titulo{
+	color: white;
+	font-size: 150%;
+	font-family: arial;
+	background-color: #566573;
+}
+
+a{
+	text-decoration: none;
+	font-family: arial;
+	color: white;
+	border: solid 1px black;
+	background-color: #5DADE2;
+}
+

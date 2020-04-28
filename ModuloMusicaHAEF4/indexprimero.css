@@ -1,0 +1,54 @@
+#boton{
+	margin-top: 7%;
+	margin-right: 2%; 
+}
+
+#bienvenidos{
+	font-family: arial;
+	font-size: 300%;
+	margin-top: 10%;
+	color: white;
+	font-size: 300%;
+	font-family: arial;
+	background-color
+}
+
+#fondo{
+	background-image: url(fondo.jpg);
+	background-size: 95%
+}
+#contenedor ul li{
+	display:
+}
+#contenedor ul li a{
+	color: black;
+	display: 
+	padding: 20px 20px;
+	text-decoration: none;
+}
+#contenedor ul li a:hover{
+	background-color: #21618C;
+	border: solid 1px;
+	border-collapse: collapse;
+	border-width: 5%;
+}
+a{
+	font-size: 150%;
+}
+#contenedor ul li a{
+	background-color: #D6EAF8;
+	border: solid;
+	border-collapse: collapse;
+	border-width: 5%;
+}
+body{
+	background-image: url(fondo.jpg);
+	background-size: 95%
+}
+ul li a{
+	text-decoration: none;
+	font-family: arial;
+	color: white;
+	border: solid 1px black;
+	background-color: #5DADE2;
+}
