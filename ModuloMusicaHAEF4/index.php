@@ -13,6 +13,8 @@
 	<li align="center"><a href="formulario.html">Musica</li>
 		<br>
 	<li align="center"><a href="./musica/MusicaControlador.php?operacion=index">Registro de canciones</li>
+		<br>
+	<li align="center"> <a href="Mostrar.php"></a> Mostrar </li>	
 </ul>
 </div>
 </body>
