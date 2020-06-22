@@ -1,0 +1,32 @@
+Para comenzar en la imagen se refleja claramente de una función la cual es utilizada de un modelo la cual maneja todas las acciones realizadas en un módulo especifico
+
+La función index() se encuentra vacía por lo cual no se utiliza con parámetros de búsqueda
+
+La  línea 9 comienza llamando a la clase de la conexión con la base de datos, en este caso clasedb();
+
+La línea 10 se hace una instancia de la clase que se llamo en la primera línea, y se llama a uno de los métodos de la clase que hace instancia a la conexión para poder utilizar los parámetros de mysql.
+
+
+La línea 12 se realiza la consulta a la base de datos, específicamente a la tabla datos_personales
+
+En la línea 14 se utiliza el método de consultas de mysqli para realizar la búsqueda en la base de datos
+
+En la línea 15 se utiliza la función myqli_num_fields() con la cual se verifica la cantidad de campos que posee la tabla.
+
+En la línea 16 se verifica la  cantidad de filas que posee la consulta mediante la  función mysqli_num_rows().
+
+En la linea 17 se declara la variable de contero $i=0 y se utilizara para recorrer el array de datos de la consulta
+
+En la línea 18 se declara una variable de array la cual se le insertaran los datos de la consulta
+
+Linea 20 se utilza el bucle while() para recorrer los datos de la consulta y dentro se utiliza la función de mysqli_fetch_array() para recorrer el while hasta que se acaben los datos de la tabla.
+
+En la línea 21 se esta utilizando un for()  dentro del while(), esto de trabajar los datos en formato de tabla y de esta manera al momento de imprimir los datos, estos esten ya detallados y no sea necesario recorrer nuevamente este array
+
+Linea 22 se iguala el array en formato matriz para ejecutar básicamente lo que se recalco arriba, manejarlo directamente como una tabla.
+
+Línea 24 se incrementa en +1 el contador esto es para que el while no se estanque y cause un problema.
+
+Linea 26 se cierra la conexión con la función mysqli_close(); con el  parámetro de la variable que se declaro de conexión $conex.
+
+Linea 28 se utiliza el método de php de redireccionamiento header() y dentro del mismo el lugar a donde se redireccionara, a su vez se pasan los parámetros de cantidad de filas, columnas y el array para usarlo en el index.php e imprimir estos datos
