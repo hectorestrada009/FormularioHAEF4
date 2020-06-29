@@ -1,0 +1,48 @@
+Línea 82:
+
+Línea 84: instanciamos la "clasedb" para poder utilizarla, y se guarda como una variable.
+
+Línea 85: se ejecuta una función la cual conecta con la base de datos y va guardada como variable.
+
+Línea 87: Realiza consult a la base de datos indicando la tabla y los campos.
+
+Línea 88: se almacenan valores correspondientes a la base de datos para ser utilizados luego.
+
+Línea 89: Ejecuta una función para poder obtener el número de filas regresadas por la consulta ya ejecutada.
+
+Línea 91: Se usa la función "header" para redireccionar al usuario a otra página, en este caso a "editar.php".
+
+Línea 95: POST, es el método por el cual se envían los datos del formulario a un archivo, en este caso el controlador.
+
+Línea 96: como anteriormente fue explicado,se instancia la "clasedb" y así poder utilizarla.
+
+Línea 102: Solicita los campos en la tabla de la base de datos.
+
+Línea 103: se crea un condicional "if" para poder verificar si la variable "$cant" contiene algún número mayor a 0.
+
+Línea 104: se cierra las llaves del PHP.
+
+Línea 105: se crea una etiqueta "<script>" dándole un tipo "text/javacript" así podemos escribir JavaScript en el mismo.
+
+Línea 106: se crea una alerta de JavaScript para notificar al usuario que la cédula ya está registrada.
+
+Línea 107: damos uso a la variable global y muy conocida de JavaScript "window" y su atributo "location" así, redireccionamos al usario a otro ámbito del programa.
+
+Línea 108: se cierra la etiqueta "<script>".
+
+Línea 109: se abre otra llave PHP, así continuamos de nuevo escribiendo código PHP.
+
+Línea 110: es cerrado las llaves del "if", posteriormente agregamos un "else" para continuar con su contrariedad.
+
+Línea 113: se realiza la ejecución de la sentencia.
+
+Línea 114: se crea nuevamente otro "if" para poder verificar el resultado de la respuesta del servidor.
+
+Línea 115: se cierran llaves PHP.
+
+Línea 116: creamos una etiqueta "<script>" para poder generar codigo Java Script.
+
+Línea 118: se usa la variable global anteriormente mencionada "window" y el mismo atributo "location" para redireccionar a la parte de registro de sistema.
+
+Línea 119: se cierra el "<script>".
+
